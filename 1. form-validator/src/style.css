@@ -69,10 +69,14 @@ html {
   cursor: pointer;
 }
 
-.userName_alert {
-  margin-top: 5px;
+.alert {
+  margin-top: 10px;
   padding: 0;
   color: #e74c3c;
   font-size: 14px;
-  opacity: 0.8;
+  visibility: hidden;
+}
+
+.alert-show {
+  visibility: visible;
 }

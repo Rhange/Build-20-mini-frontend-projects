@@ -1,51 +1,94 @@
-const userName = document.querySelector(".js-userName_input"),
+const form = document.querySelector(".js-form"),
+  userName = document.querySelector(".js-userName_input"),
   email = document.querySelector(".js-email_input"),
   password = document.querySelector(".js-password_input"),
-  confirm = document.querySelector(".js-conform_input"),
-  submit = document.querySelector(".form_submit"),
-  inputs = document.querySelectorAll("input");
-
-let userNameAlert = document.querySelector(".js-userName_alert"),
-  emailAlert = document.querySelector(".js-email_alert"),
-  passwordAlert = document.querySelector(".js-password_alert"),
-  confirmAlert = document.querySelector(".js-confirm_alert");
+  confirm = document.querySelector(".js-confirm_input"),
+  button = document.querySelector(".form_submit");
 
 function handleSubmit(e) {
   e.preventDefault();
 }
 
-function setPassword() {
-  if (password.value.length >= 6) {
-    userName.style.border = "2px solid #2ECC71";
-    userNameAlert.innerText = "";
+function showSuccess(input) {
+  const parent = input.parentElement;
+  const alert = parent.querySelector("span");
+  alert.classList.remove("alert-show");
+  input.style.border = "2px solid #2ECC71";
+}
+
+function showError(input, message) {
+  const parent = input.parentElement;
+  const alert = parent.querySelector("span");
+  const inputName = parent.querySelector("h2");
+  input.style.border = "2px solid #e74c3c";
+  alert.className = "js-alert alert alert-show";
+  alert.innerText = `${inputName.innerText} ${message}`;
+}
+
+function checkInvalid(Arr) {
+  Arr.forEach(function(each) {
+    if (each.value === "") {
+      showError(each, "is not valid.");
+    } else {
+      showSuccess(each);
+    }
+  });
+}
+
+function checkUserName(username, min, max) {
+  if (username.value.length < min) {
+    showError(username, `must be at least ${min} characters.`);
+  } else if (username.value.length > max) {
+    showError(username, `must be less than ${max} characters.`);
   } else {
-    userName.style.border = "2px solid #E74C3C";
-    userNameAlert.innerText = "Password must be at least 6 characters";
+    showSuccess(username);
   }
 }
-function setUserName() {
-  if (userName.value.length >= 3) {
-    userName.style.border = "2px solid #2ECC71";
-    userNameAlert.innerText = "";
+
+function checkEmail(email) {
+  const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+  if (email.value === "") {
+    showError(email, "is required.");
+  } else if (!re.test(String(email.value).toLowerCase())) {
+    showError(email, "is not valid.");
   } else {
-    userName.style.border = "2px solid #E74C3C";
-    userNameAlert.innerText = "Username must be at least 3 characters";
+    showSuccess(email);
+  }
+}
+
+function checkPassword(password, min, max) {
+  const passwordNums = password.value.length;
+  if (passwordNums < min) {
+    showError(password, `must be at least ${min} numbers`);
+  } else if (passwordNums > max) {
+    showError(password, `must be less than ${max} numbers`);
+  } else {
+    showSuccess(password);
+  }
+}
+
+function checkConfirm(confirm) {
+  if (confirm.value === "") {
+    showError(confirm, "is required.");
+  } else if (confirm.value !== password.value) {
+    showError(confirm, "do not match.");
+  } else {
+    showSuccess(confirm);
   }
 }
 
 function handleClick() {
-  setUserName(); // Username
-  setPassword();
-}
-
-for (let i = 0; i < inputs.length; i++) {
-  inputs[i].addEventListener("click", handleSubmit);
+  checkInvalid([userName, email, password, confirm]);
+  checkUserName(userName, 3, 15);
+  checkPassword(password, 6, 20);
+  checkEmail(email);
+  checkConfirm(confirm);
 }
 
 function init() {
-  submit.addEventListener("click", handleClick);
-
-  console.log(inputs);
+  button.addEventListener("click", handleClick);
+  form.addEventListener("submit", handleSubmit);
 }
 
 init();
