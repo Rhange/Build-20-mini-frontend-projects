@@ -1,6 +1,7 @@
 # Build 20 mini frontend projects
 
 Practice HTML, CSS, vanillaJS by making various mini-projects.
+This projects from here.[https://vanillawebprojects.com/]
 
 ## 1. Form Validation
 
