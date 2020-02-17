@@ -16,3 +16,6 @@ built in 2020.02.11
 
 ## 2. Movie Seat Booking
 
+[Movie seat booking](https://rhange.github.io/Build-20-mini-frontend-projects/2.%20movie-seat-booking)
+
+built in 2020.02.17
