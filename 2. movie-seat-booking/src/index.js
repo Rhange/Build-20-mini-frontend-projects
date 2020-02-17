@@ -5,6 +5,7 @@ const MOVIE_LS = "movie";
 const SEATS_LS = "seats";
 
 let selected = [];
+let currentMovie = "";
 
 loadedSeats = Arr => {
   if (Arr !== null) {
@@ -19,53 +20,42 @@ loadedSeats = Arr => {
   }
 };
 
-// showResult = (selectedSeatsCount, selectedMovie) => {
-//   console.log(selectedSeatsCount);
-//   console.log(typeof selectedMovie);
-//   const price = selectedSeatsCount * priceObj.selectedMovie;
-//   console.log(priceObj.toy);
-//   const result = document.createElement("h3");
-//   document.querySelector("body");
-//   result.innerText =
-// };
-
-showResult = (movie, seatsCount) => {
-  const priceObj = {
-    avengers: 10,
-    joker: 12,
-    toy: 8,
-    lion: 9
-  };
-  const priceOfMovie = priceObj[movie];
-  const result = document.createElement("h1");
-  const body = document.querySelector(".container");
-
-  const counts = document.createElement("span");
-  const price = document.createElement("span");
-  counts.innerText = seatsCount;
-  price.innerText = seatsCount * priceOfMovie;
-
-  result.innerText = `You have selected ${counts.innerText} seats for a price of $${price.innerText}`;
-  body.appendChild(result);
-};
-
 load = () => {
   const loadedMovie = localStorage.getItem(MOVIE_LS);
   const loadedSeatsNumber = localStorage.getItem(SEATS_LS);
-  if (loadedMovie && loadedSeatsNumber !== null) {
+  if (loadedMovie !== null) {
     select.value = JSON.parse(loadedMovie);
+    currentMovie = JSON.parse(loadedMovie);
+  }
+  if (loadedSeatsNumber !== null) {
     selected = JSON.parse(loadedSeatsNumber);
     loadedSeats(selected);
-    showResult(select.value, selected.length);
   }
 };
 
 saveMovie = input => localStorage.setItem(MOVIE_LS, JSON.stringify(input));
 saveSeats = input => localStorage.setItem(SEATS_LS, JSON.stringify(input));
 
+changeResult = () => {
+  const priceObj = {
+    avengers: 10,
+    joker: 12,
+    toy: 8,
+    lion: 9
+  };
+  const seatCount = selected.length;
+  const priceOfMovie = priceObj[currentMovie];
+  const counts = document.querySelector(".js-seat-nums");
+  const price = document.querySelector(".js-totalPrice");
+  counts.innerText = seatCount;
+  price.innerText = seatCount * priceOfMovie;
+};
+
 handleChange = e => {
   const movieName = e.target.value;
   saveMovie(movieName);
+  currentMovie = movieName;
+  changeResult();
 };
 
 handleClick = e => {
@@ -81,6 +71,7 @@ handleClick = e => {
     }
   }
   saveSeats(selected);
+  changeResult();
 };
 
 init = () => {
@@ -89,6 +80,7 @@ init = () => {
   seats.forEach(function(seat) {
     seat.addEventListener("click", handleClick);
   });
+  changeResult();
 };
 
 init();
