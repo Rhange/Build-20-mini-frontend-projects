@@ -1,4 +1,7 @@
+[![author](https://img.shields.io/badge/author-Rhange-f39c12.svg?style=flat-square)](https://rhange.tistory.com)
 [![time tracker](https://wakatime.com/badge/github/Rhange/Build-20-mini-frontend-projects.svg)](https://wakatime.com/badge/github/Rhange/Build-20-mini-frontend-projects)
+[![Build Status](https://travis-ci.com/Rhange/Build-20-mini-frontend-projects.svg?branch=master)](https://travis-ci.com/Rhange/Build-20-mini-frontend-projects)
+
 
 # Build 20 mini frontend projects
 
