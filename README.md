@@ -6,7 +6,8 @@
 # Build 20 mini frontend projects
 
 Practice HTML, CSS, vanillaJS by making various mini-projects.
-<p>This projects from <a href="https://vanillawebprojects.com/">here</a><p>
+
+This projects from [Here]("https://vanillawebprojects.com") and [Here(github)]("https://github.com/bradtraversy/vanillawebprojects")
 
 ## 1. Form Validation
 
