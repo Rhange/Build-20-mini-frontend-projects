@@ -1,3 +1,5 @@
+[![time tracker](https://wakatime.com/badge/github/Rhange/Build-20-mini-frontend-projects.svg)](https://wakatime.com/badge/github/Rhange/Build-20-mini-frontend-projects)
+
 # Build 20 mini frontend projects
 
 Practice HTML, CSS, vanillaJS by making various mini-projects.
