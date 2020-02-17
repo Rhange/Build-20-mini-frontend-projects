@@ -36,7 +36,7 @@ load = () => {
 saveMovie = input => localStorage.setItem(MOVIE_LS, JSON.stringify(input));
 saveSeats = input => localStorage.setItem(SEATS_LS, JSON.stringify(input));
 
-changeResult = () => {
+showResult = () => {
   const priceObj = {
     avengers: 10,
     joker: 12,
@@ -47,15 +47,23 @@ changeResult = () => {
   const priceOfMovie = priceObj[currentMovie];
   const counts = document.querySelector(".js-seat-nums");
   const price = document.querySelector(".js-totalPrice");
-  counts.innerText = seatCount;
-  price.innerText = seatCount * priceOfMovie;
+  if (
+    localStorage.getItem(MOVIE_LS) &&
+    localStorage.getItem(SEATS_LS) !== null
+  ) {
+    counts.innerText = seatCount;
+    price.innerText = seatCount * priceOfMovie;
+  } else {
+    counts.innerText = 0;
+    price.innerText = 0;
+  }
 };
 
 handleChange = e => {
   const movieName = e.target.value;
   saveMovie(movieName);
   currentMovie = movieName;
-  changeResult();
+  showResult();
 };
 
 handleClick = e => {
@@ -71,7 +79,7 @@ handleClick = e => {
     }
   }
   saveSeats(selected);
-  changeResult();
+  showResult();
 };
 
 init = () => {
@@ -80,7 +88,7 @@ init = () => {
   seats.forEach(function(seat) {
     seat.addEventListener("click", handleClick);
   });
-  changeResult();
+  showResult();
 };
 
 init();
