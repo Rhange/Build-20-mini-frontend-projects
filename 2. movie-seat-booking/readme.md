@@ -15,9 +15,9 @@ Design inspiration from [Dribbble](https://dribbble.com/shots/3628370-Movie-Seat
 
 ## TODOS
 
-[x] HTML
-[x] CSS
-[ ] Vanilla JS
-[ ] seat color change
-[ ] selected number of seats
-[ ] total price
+- [x] HTML
+- [x] CSS
+- [ ] Vanilla JS
+- [ ] seat color change
+- [ ] selected number of seats
+- [ ] total price
