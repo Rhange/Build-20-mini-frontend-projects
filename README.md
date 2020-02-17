@@ -4,18 +4,20 @@
 
 # Build 20 mini frontend projects
 
-Practice HTML, CSS, vanillaJS by making various mini-projects.
+- Practice HTML, CSS, vanillaJS by making various mini-projects.
 
-This projects from [here](https://vanillawebprojects.com) and [here(github)](https://github.com/bradtraversy/vanillawebprojects)
+- This projects from [here](https://vanillawebprojects.com) and [here(github)](https://github.com/bradtraversy/vanillawebprojects)
 
 ## 1. Form Validation
 
-[Form validation](https://rhange.github.io/Build-20-mini-frontend-projects/1.%20form-validator/index.html)
+- [Form validation](https://rhange.github.io/Build-20-mini-frontend-projects/1.%20form-validator/index.html)
+- [Time to complete](https://wakatime.com/@Rhange/projects/qwizhmxeop?start=2020-02-07&end=2020-02-11)
 
 built in 2020.02.11
 
 ## 2. Movie Seat Booking
 
-[Movie seat booking](https://rhange.github.io/Build-20-mini-frontend-projects/2.%20movie-seat-booking)
+- [Movie seat booking](https://rhange.github.io/Build-20-mini-frontend-projects/2.%20movie-seat-booking)
+- [Time to complete](https://wakatime.com/@Rhange/projects/qwizhmxeop?start=2020-02-14&end=2020-02-17)
 
 built in 2020.02.17
