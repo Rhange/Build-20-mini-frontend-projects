@@ -18,6 +18,8 @@ Design inspiration from [Dribbble](https://dribbble.com/shots/3628370-Movie-Seat
 - [x] HTML
 - [x] CSS
 - [ ] Vanilla JS
-- [ ] seat color change
-- [ ] selected number of seats
-- [ ] total price
+- [x] seat color change
+- [x] selected number of seats
+- [x] total price
+- [x] save localstorage
+- [ ] result text for seat count and total price in real time
