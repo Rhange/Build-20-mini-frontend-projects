@@ -1,6 +1,5 @@
 [![author](https://img.shields.io/badge/author-Rhange-f39c12.svg?style=flat-square)](https://rhange.tistory.com)
 [![time tracker](https://wakatime.com/badge/github/Rhange/Build-20-mini-frontend-projects.svg)](https://wakatime.com/badge/github/Rhange/Build-20-mini-frontend-projects)
-[![Build Status](https://travis-ci.com/Rhange/Build-20-mini-frontend-projects.svg?branch=master)](https://travis-ci.com/Rhange/Build-20-mini-frontend-projects)
 
 # Build 20 mini frontend projects
 
@@ -21,6 +20,10 @@ built in 2020.02.11
 built in 2020.02.17
 
 ## 3. Custom Video Player
+
+- [Custom Video Player](https://rhange.github.io/Build-20-mini-frontend-projects/3.%20custom-video-player/index.html)
+
+built in 2020.04.29 (2h 25m)
 
 
 
