@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/7a20ba7db5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Custom Video Player</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="container_title">
+        Custom Video Player
+      </h1>
+      <video
+        class="container_screen"
+        src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4"
+        poster="img/poster.png"
+      ></video>
+
+      <div class="container_controls controls">
+        <button class="controls_btn" id="play">
+          <i class="fas fa-play"></i>
+        </button>
+        <button class="controls_btn" id="reset">
+          <i class="fas fa-square"></i>
+        </button>
+        <input
+          class="controls_range"
+          type="range"
+          min="0"
+          max="100"
+          value="0"
+          step="1"
+        />
+        <div class="controls_timeStamp">
+          <span id="current">00:00</span>
+          /
+          <span id="total">00:00</span>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
