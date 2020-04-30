@@ -3,18 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
     <title>4th: Exchange Rate Calculator</title>
   </head>
   <body>
+    <img
+      src="https://vanillawebprojects.com/projects/exchange-rate/img/money.png"
+      alt="symbol"
+      class="logo"
+    />
+    <header class="title">
+      Exchange Rate Calculator
+    </header>
+    <p class="description">
+      Choose the currency and the amounts to get the exchange rate
+    </p>
     <div class="container">
-      <img
-        src="https://vanillawebprojects.com/projects/exchange-rate/img/money.png"
-        alt="symbol"
-        class="container_image"
-      />
-      <title class="container_title">
-        Exchange Rate Calculator
-      </title>
+      <div class="container_currency currency">
+        <select id="currency-input"></select>
+        <input type="number" id="amount-input" placeholder="0" value="1" />
+      </div>
+      <div class="container_swap-rate swap-rate">
+        <button class="swap-rate_btn btn">
+          Swap
+        </button>
+        <div class="swap-rate_rate">1 USD = 1100 KOR</div>
+      </div>
+      <div class="container_currency currency">
+        <select id="currency-output"></select>
+        <input type="number" id="amount-output" placeholder="0" />
+      </div>
     </div>
   </body>
+  <script src="scripts.js"></script>
 </html>
