@@ -9,21 +9,25 @@
 
 ## 1. Form Validation
 
-- [Form validation](https://rhange.github.io/Build-20-mini-frontend-projects/1.%20form-validator/index.html)
+- [My result for 1st project](https://rhange.github.io/Build-20-mini-frontend-projects/1.%20form-validator/index.html)
 
 built in 2020.02.11
 
 ## 2. Movie Seat Booking
 
-- [Movie seat booking](https://rhange.github.io/Build-20-mini-frontend-projects/2.%20movie-seat-booking)
+- [My result for 2nd project](https://rhange.github.io/Build-20-mini-frontend-projects/2.%20movie-seat-booking)
 
 built in 2020.02.17
 
 ## 3. Custom Video Player
 
-- [Custom Video Player](https://rhange.github.io/Build-20-mini-frontend-projects/3.%20custom-video-player/index.html)
+- [My result for 3rd project](https://rhange.github.io/Build-20-mini-frontend-projects/3.%20custom-video-player/index.html)
 
 built in 2020.04.29 (2h 25m)
 
+## 4. Exchange Rate Calculator
 
+- [My result for 4th project]
+
+built in 
 
