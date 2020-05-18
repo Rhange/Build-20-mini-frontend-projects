@@ -11,23 +11,26 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   padding-top: 10vh;
 }
 
 img {
   width: 150px;
   height: 150px;
+  margin-bottom: 30px;
 }
 
 .title {
   font-size: 32px;
   font-weight: 600;
   color: #12cbc4;
+  margin-bottom: 30px;
 }
 
 .description {
   font-size: 16px;
+  margin-bottom: 30px;
 }
 
 .container {
@@ -39,14 +42,28 @@ img {
   padding: 10px;
 }
 
-.container .container_currency {
+.container .container__currency {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.container .container_swap-rate {
+.currency #currency-input,
+.currency #currency-output {
+  padding: 10px 0px;
+  padding-left: 10px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.currency input {
+  all: unset;
+  text-align: right;
+  font-size: 26px;
+}
+
+.container .container__swap-rate {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -54,14 +71,14 @@ img {
   margin: 60px 0px;
 }
 
-.container_swap-rate .swap-rate_btn {
+.container__swap-rate .swap-rate__btn {
   background: #12cbc4;
   color: #fff;
-  padding: 5px 10px;
+  padding: 10px 25px;
   border-radius: 5px;
 }
 
-.container_swap-rate .swap-rate_rate {
+.container__swap-rate .swap-rate__rate {
   color: #12cbc4;
-  font-size: 14px;
+  font-size: 16px;
 }

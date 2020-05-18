@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="/src/styles/styles.css" />
     <title>4th: Exchange Rate Calculator</title>
   </head>
   <body>
@@ -19,21 +19,26 @@
       Choose the currency and the amounts to get the exchange rate
     </p>
     <div class="container">
-      <div class="container_currency currency">
+      <div class="container__currency currency">
         <select id="currency-input"></select>
         <input type="number" id="amount-input" placeholder="0" value="1" />
       </div>
-      <div class="container_swap-rate swap-rate">
-        <button class="swap-rate_btn btn">
+      <div class="container__swap-rate swap-rate">
+        <button class="swap-rate__btn btn">
           Swap
         </button>
-        <div class="swap-rate_rate">1 USD = 1100 KOR</div>
+        <div class="swap-rate__rate">1 USD = 1100 KOR</div>
       </div>
-      <div class="container_currency currency">
+      <div class="container__currency currency">
         <select id="currency-output"></select>
-        <input type="number" id="amount-output" placeholder="0" />
+        <input
+          type="number"
+          id="amount-output"
+          placeholder="0"
+          readonly="readonly"
+        />
       </div>
     </div>
   </body>
-  <script src="scripts.js"></script>
+  <script src="src/js/api.js"></script>
 </html>
