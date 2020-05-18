@@ -27,7 +27,11 @@ built in 2020.04.29 (2h 25m)
 
 ## 4. Exchange Rate Calculator
 
-- [My result for 4th project]
+- [My result for 4th project](https://rhange.github.io/Build-20-mini-frontend-projects/4.%20exchange-rate-calculator/index.html)
 
-built in 
+built in 2020.05.18 (4h)
+
+## 5. DOM Array Method
+
+- [My result for 5th project]()
 
