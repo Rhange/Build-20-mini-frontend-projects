@@ -12,7 +12,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 10vh;
 }
 
 img {
@@ -34,8 +33,9 @@ img {
 }
 
 .container {
-  height: 40vh;
-  width: 30%;
+  width: 60%;
+  margin-left: 0;
+  margin-right: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -74,7 +74,7 @@ img {
 .container__swap-rate .swap-rate__btn {
   background: #12cbc4;
   color: #fff;
-  padding: 10px 25px;
+  padding: 10px 20px;
   border-radius: 5px;
 }
 
