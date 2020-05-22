@@ -33,5 +33,6 @@ built in 2020.05.18 (4h)
 
 ## 5. DOM Array Method
 
-- [My result for 5th project]()
+- [My result for 5th project](https://rhange.github.io/Build-20-mini-frontend-projects/5.%20DOM%20Array%20Methods%20Project/index.html)
 
+built in 2020.05.22 (3h 13m)

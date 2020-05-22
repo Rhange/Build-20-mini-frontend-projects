@@ -1,14 +1,14 @@
-## Form Validator 
+# Form Validator 
 Simple validation. Check required, length, email regex, and password match.
 
 ## Project Specifications
 
-- Create form User Interface.
-- Show error messages when condition is not enough.
-- checkInvalid() to accept array of inputs.
-- checkUserName() & checkPassword() to check min and max length.
-- checkEmail() to validate email with regex.(regular expression)
-- checkConfirm() to match password & confirm password.
+- [x] Create form User Interface.
+- [x] Show error messages when condition is not enough.
+- [x] checkInvalid() to accept array of inputs.
+- [x] checkUserName() & checkPassword() to check min and max length.
+- [x] checkEmail() to validate email with regex.(regular expression)
+- [x] checkConfirm() to match password & confirm password.
 
 ## Couldn't self-complete 1st project
 - In design, HTML and CSS, I did myself. But, in JS part, I didn't well enough implement a part of operating error bars 

@@ -11,4 +11,4 @@ Project to teach high order array methods and DOM manipulation
 - [x] Use sort() to sort by wealth
 - [x] Use reduce() to add all wealth
 
-this description is from [traversy mini project](https://github.com/bradtraversy/vanillawebprojects/blob/master/dom-array-methods/readme.md)
+This description is from [traversy mini project](https://github.com/bradtraversy/vanillawebprojects/blob/master/dom-array-methods/readme.md)
