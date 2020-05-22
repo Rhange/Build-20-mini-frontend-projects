@@ -91,3 +91,28 @@ main {
   background-color: white;
   padding: 10px 10px;
 }
+
+@media (max-width: 500px) {
+  body {
+    line-height: 1.5;
+  }
+
+  .container:first-child .button {
+    font-size: 12px;
+  }
+
+  .container:last-child .container__title {
+    display: block;
+    font-size: 16px;
+  }
+
+  .container:last-child li {
+    display: block;
+    font-size: 14px;
+  }
+
+  .container:last-child span:first-child {
+    display: block;
+    margin-bottom: 5px;
+  }
+}
