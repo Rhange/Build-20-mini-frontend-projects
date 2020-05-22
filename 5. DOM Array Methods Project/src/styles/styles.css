@@ -1,0 +1,93 @@
+@import "reset.css";
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0px 20px;
+  background-color: #f4f4f4;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  margin: 30px 0px;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.container:first-child {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+  padding-right: 30px;
+  border-right: 1px solid black;
+}
+
+.container:first-child .button {
+  all: unset;
+  background-color: #fff;
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.container:first-child .button:last-child {
+  margin: 0;
+}
+
+.container:last-child {
+  width: 50%;
+}
+
+.container:last-child .container__title,
+.container:last-child li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+.container:last-child .container__title {
+  font-size: 24px;
+  border-bottom: 1px solid black;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.container:last-child li {
+  margin-bottom: 15px;
+}
+
+.container__title span:first-child {
+  font-weight: 550;
+}
+
+.person,
+.total-value {
+  font-weight: 550;
+}
+
+.total {
+  background-color: white;
+  padding: 10px 10px;
+}
