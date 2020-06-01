@@ -1,19 +1,19 @@
 @import "reset.css";
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 
+:root {
+  --main-color: #30336b;
+  --button-color: #be2edd;
+}
+
 * {
   box-sizing: border-box;
 }
 
-.modal,
-.menu {
-  display: none;
-}
-
 body,
 html {
-  width: 100%;
   font-family: "Lato", sans-serif;
+  display: flex;
 }
 
 .header {
@@ -21,15 +21,18 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  height: 280px;
-  background-color: #30336b;
+  width: 100%;
+  height: 260px;
+  background-color: var(--main-color);
   color: white;
+  margin: 0;
 }
 
 .header .header__menu-btn {
-  position: absolute;
+  position: relative;
+  align-self: start;
   left: 20px;
-  top: 20px;
+  top: 15px;
   font-size: 26px;
   display: flex;
   justify-content: center;
@@ -44,19 +47,18 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   height: 80%;
 }
 
 .header .header__title {
   font-size: 36px;
   font-weight: bold;
-  margin-top: 10px;
 }
 
 .header .header__description {
   font-size: 20px;
-  margin: 30px 0px;
+  margin: 20px 0px;
 }
 
 .header .header__btn {
@@ -64,8 +66,9 @@ html {
   padding: 15px 30px;
   border-radius: 5px;
   font-size: 20px;
-  background-color: #be2edd;
+  background-color: var(--button-color);
   cursor: pointer;
+  margin-bottom: 30px;
 }
 
 .main {
@@ -92,4 +95,116 @@ html {
 .main .main__list {
   margin-left: 15px;
   line-height: 1.4;
+}
+
+.menu {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--main-color);
+  border-right: 1px solid rgba(128, 128, 128, 0.37);
+  width: 300px;
+  transform: translateX(-300px);
+  transition: transform 2s ease-in-out forwards;
+}
+
+.menu img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 30px 0px;
+}
+
+.menu .menu__lists {
+  width: 100%;
+  align-self: start;
+}
+
+.menu .lists__list {
+  width: 100%;
+  padding: 25px 0px;
+  padding-left: 20px;
+  color: white;
+  border-top: 1px solid rgba(128, 128, 128, 0.37);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.37);
+}
+
+.menu-show {
+  display: flex;
+  transform: none;
+}
+
+.modal {
+  display: none;
+}
+
+.modal {
+  width: 100%;
+  height: 120%;
+
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 200;
+  background-color: rgba(0, 0, 0, 0.521);
+}
+
+.modal .modal__container {
+  background-color: white;
+  width: 400px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal__container .modal__header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15px;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: var(--main-color);
+}
+
+.modal__header .modal__btn-close {
+  cursor: pointer;
+}
+
+.modal__container .modal__contents {
+  width: 100%;
+  padding: 20px;
+}
+
+.modal__contents .modal__description {
+  padding: 10px 0px;
+}
+
+.modal__contents form {
+  margin-top: 10px;
+}
+
+.modal__contents input {
+  display: block;
+  margin: 10px 0px;
+  padding: 8px 5px;
+  width: 100%;
+}
+
+.modal__contents .modal__btn {
+  all: unset;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: var(--button-color);
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.modal-show {
+  display: flex;
 }
