@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/7a20ba7db5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./src/styles/styles.css" />
+    <title>6th: Menu Slider & Modal</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__menu-btn js-menuBtn">
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="header__container">
+        <h1 class="header__title">Menu Slider & Modal</h1>
+        <p class="header__description">
+          This project implemented menu slider and modal window
+        </p>
+        <button class="header__btn js-signUpBtn">Sign Up</button>
+      </div>
+    </header>
+    <main class="main">
+      <h2 class="main__title">What is this project about?</h2>
+      <p class="main__description">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, possimus
+        velit numquam molestias esse incidunt beatae quidem nihil ut
+        consequuntur optio vitae. Tempora, assumenda. Possimus quae aperiam
+        obcaecati explicabo neque?
+      </p>
+      <h2 class="main__title">Tell Me More</h2>
+      <p class="main__description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+        repudiandae corrupti culpa autem tempore odit similique debitis illo sed
+        placeat repellendus dolores iure mollitia, necessitatibus cupiditate
+        harum, voluptate velit libero?
+      </p>
+      <h2 class="main__title">Benefits</h2>
+      <ul class="main__lists">
+        <li class="main__list">✔ Lifetime Access</li>
+        <li class="main__list">✔ 30 Day Money Back</li>
+        <li class="main__list">✔ Tailored Customer Support</li>
+      </ul>
+      <p class="main__description">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis earum
+        magnam quam, nulla dignissimos sunt sint laudantium exercitationem dicta
+        tempora aspernatur cum magni! Blanditiis fugiat, illo illum repellat
+        voluptate quibusdam.
+      </p>
+    </main>
+    <div class="modal-container modal">
+      <header class="modal__header">
+        <h3 class="modal__title">Sign Up</h3>
+        <span class="modal__btn-close js-modalCloseBtn">✖</span>
+      </header>
+      <section class="modal__contents">
+        <h4 class="modal__description">
+          Register with us to get offers, support and more
+        </h4>
+        <form class="modal__form js-form">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            class="modal__input"
+            name="name"
+            placeholder="Enter Name"
+          />
+          <label for="email">Email</label>
+          <input
+            type="text"
+            class="modal__input"
+            name="email"
+            placeholder="Enter Email"
+          />
+          <label for="password">Password</label>
+          <input
+            type="password"
+            class="modal__input"
+            name="password"
+            placeholder="Enter Password"
+          />
+          <label for="password2">Password</label>
+          <input
+            type="password"
+            class="modal__input"
+            name="password2"
+            placeholder="Confirm Password"
+          />
+          <button class="modal__btn js-modalSubmitBtn">Submit</button>
+        </form>
+      </section>
+      <aside class="menu">
+        <img src="./src/img/img.png" alt="a man on the earth" />
+        <ul class="menu__lists lists">
+          <li class="lists__list">Home</li>
+          <li class="lists__list">Portfolio</li>
+          <li class="lists__list">Blog</li>
+          <li class="lists__list">Contact Me</li>
+        </ul>
+      </aside>
+    </div>
+  </body>
+</html>
