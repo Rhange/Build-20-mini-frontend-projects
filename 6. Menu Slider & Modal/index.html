@@ -11,13 +11,13 @@
     <title>6th: Menu Slider & Modal</title>
   </head>
   <body>
-    <aside class="container menu">
+    <aside class="menu js-menu">
       <img src="./src/img/img.png" alt="a man on the earth" />
       <ul class="menu__lists lists">
-        <li class="lists__list">Home</li>
-        <li class="lists__list">Portfolio</li>
-        <li class="lists__list">Blog</li>
-        <li class="lists__list">Contact Me</li>
+        <li class="lists__list"><a href="#">Home</a></li>
+        <li class="lists__list"><a href="#">Portfolio</a></li>
+        <li class="lists__list"><a href="#">Blog</a></li>
+        <li class="lists__list"><a href="#">Contact Me</a></li>
       </ul>
     </aside>
     <div class="container">
@@ -61,8 +61,8 @@
           repellat voluptate quibusdam.
         </p>
       </main>
-      <div class="modal">
-        <div class="modal__container">
+      <div class="modal js-modal">
+        <div class="modal__container js-modalContainer">
           <header class="modal__header">
             <h3 class="modal__title">Sign Up</h3>
             <span class="modal__btn-close js-modalCloseBtn">✖</span>
@@ -100,11 +100,12 @@
                 name="password2"
                 placeholder="Confirm Password"
               />
-              <button class="modal__btn js-modalSubmitBtn">Submit</button>
+              <button class="modal__btn js-submitBtn">Submit</button>
             </form>
           </section>
         </div>
       </div>
     </div>
+    <script src="./src/js/scripts.js"></script>
   </body>
 </html>
