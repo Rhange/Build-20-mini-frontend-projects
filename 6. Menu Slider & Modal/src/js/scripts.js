@@ -9,11 +9,18 @@ const handleMenuClick = () => {
   menu.classList.toggle("menu-show");
 };
 
-const handleSignUpClick = (e) => {
+const handleSignUpClick = () => {
   modal.classList.toggle("modal-show");
 
   const closeBtn = document.querySelector(".js-modalCloseBtn");
   closeBtn.addEventListener("click", handleSignUpClick);
+};
+
+const handleWindowClick = (e) => {
+  const targetClassList = Array.from(e.target.classList);
+  if (targetClassList.includes("modal-show")) {
+    handleSignUpClick();
+  }
 };
 
 const init = () => {
@@ -24,6 +31,8 @@ const init = () => {
   if (signUpBtn) {
     signUpBtn.addEventListener("click", handleSignUpClick);
   }
+
+  window.addEventListener("click", handleWindowClick);
 };
 
 init();
