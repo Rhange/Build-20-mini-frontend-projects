@@ -7,4 +7,4 @@
 
 - This projects from [here](https://vanillawebprojects.com) and [here(github)](https://github.com/bradtraversy/vanillawebprojects)
 
-- [Here is my works](https://rhange.github.io/Build-20-mini-frontend-projects/index.html)
+- [Here is my works](https://rhange.github.io/Build-20-mini-frontend-projects)
