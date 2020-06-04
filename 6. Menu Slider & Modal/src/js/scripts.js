@@ -6,7 +6,7 @@ const signUpBtn = document.querySelector(".js-signUpBtn");
 const submitBtn = document.querySelector(".js-submitBtn");
 
 const handleMenuClick = () => {
-  menu.classList.toggle("menu-show");
+  document.body.classList.toggle("menu-show");
 };
 
 const handleSignUpClick = () => {
